@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML lists</title>
+    </head>
+    <!--
+    Unordered HTML List
+    An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+    The list items will be marked with bullets (small black circles) by default:
+
+    The CSS list-style-type property is used to define the style of the list item marker. 
+    It can have one of the following values:
+
+    Value	Description
+    disc	Sets the list item marker to a bullet (default)
+    circle	Sets the list item marker to a circle
+    square	Sets the list item marker to a square
+    none	The list items will not be marked
+    -->
+    <body>
+        <hr>
+        <h1>UNORDERED LISTS</h1>
+        <ul style="list-style-type: square;">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <hr>
+
+        <h1>Nested unordered lists</h1>
+        <ul style="list-style-type: square;">
+        <li>Tea</li>
+        <ul>
+            <li>Iced tea</li>
+            <li> hot tea</li>
+        </ul>
+        <li>Coffee</li>
+        <ul>
+            <li>Cold coffee</li>
+            <li>Hot coffee</li>
+        </ul>
+        </ul>
+        <hr>
+
+        <!--
+        The type attribute of the <ol> tag, defines the type of the list item marker:
+        Type	Description
+        type="1"	The list items will be numbered with numbers (default)
+        type="A"	The list items will be numbered with uppercase letters
+        type="a"	The list items will be numbered with lowercase letters
+        type="I"	The list items will be numbered with uppercase roman numbers
+        type="i"	The list items will be numbered with lowercase roman numbers
+
+        By default, an ordered list will start counting from 1. If you want to start counting 
+        from a specified number, you can use the start attribute:
+        -->
+        <h1>ORDERED LIST</h1>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <ol start="25">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <hr>
+
+        <h1>Nested ordered lists</h1>
+        <ol>
+        <li>Tea</li>
+        <ol type="i">
+            <li>Iced tea</li>
+           <li> hot tea</li>
+        </ol>
+        <li>Coffee</li>
+        <ol type="i">
+            <li>Cold coffee</li>
+            <li>Hot coffee</li>
+        </ol>
+        </ol>
+        <hr>
+
+        <!--
+        Use the HTML <dl> element to define a description list
+        Use the HTML <dt> element to define the description term
+        Use the HTML <dd> element to describe the term in a description list
+
+        -->
+        <h1>Description list</h1>
+        <dl>
+            <dt>India</dt>
+            <dd>-My country</dd>
+        </dl>
+        <hr>
+
+        <!--
+        The <div> element is often used as a container for other HTML elements.
+    The <div> element has no required attributes, but style, class and id are common.
+    When used together with CSS, the <div> element can be used to style blocks of content:
+        -->
+        <div>
+            <h1>DIV TAG</h1>
+            <p> Div tag is common in HTML</p>
+        </div>
+        <hr>
+
+    <!--
+    The <span> Element
+    The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+    The <span> element has no required attributes, but style, class and id are common.
+    When used together with CSS, the <span> element can be used to style parts of the text:
+    -->
+    <h1>SPAN TAG</h1>
+    <p>My name is <span>Rhutvij</span></p>
+    </body>
+    <hr>
+</html>

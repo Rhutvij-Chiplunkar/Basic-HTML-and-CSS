@@ -1,0 +1,27 @@
+body{
+    background-color:rgba(157, 255, 0, 0.301);
+    text-align: center;
+}
+.A1{
+    border: 2px solid slateblue ;
+    background-color: rgba(135, 207, 235, 0.452);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 350px;
+    margin-right: 350px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.A1 label{
+    margin: 15px;
+    color: tomato;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-weight: bold;
+}
+.A1 input{
+    color:yellow ;
+    background-color: rgba(230, 191, 191,0.5);
+}

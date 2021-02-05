@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML IMAGES</title>
+    <!--To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+    If you want the background image to cover the entire element, you can set the background-size property to 
+    cover.Also, to make sure the entire element is always covered, set the background-attachment property to fixed:
+    If you want the background image to stretch to fit the entire element, you can set the background-size property 
+    to 100% 100%:
+    -->
+    <style>
+        body{
+            background-image:url("cricket.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>GIF SUPPORTED BY HTML!!</h1>
+    <hr>
+    <img  src="SampleGIFImage_40kbmb.gif" alt="SAMPLE GIF" width="200" height="200">
+    <hr>
+
+    <!-- Use the CSS float property to let the image float to the right or to the left of a text: -->
+    <h1>IMAGE FLOATING</h1>
+    <hr>
+    <img src="cricket.jpg" alt="Cricket image" style="float: left; width: 50px; height: 50px;">
+    <p>Image will float at left!!!</p>
+    <hr>
+    <img src="cricket.jpg" alt="Cricket image" style="float: right; width: 50px; height: 50px;">
+    <p>Image will float at right!!!</p>
+    <hr>
+
+    <!--To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:
+        You can also specify the background image in the <style> element, in the <head> section:
+    -->
+    <div style="background-image:url('cricket.jpg');"  >    <!-- only required area-->
+        <h1>Background image is set</h1>
+    </div>
+    
+    <!--The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+    The <picture> element contains one or more <source> elements, each referring to different images through the 
+    srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+    Each <source> element has a media attribute that defines when the image is the most suitable.
+    Always specify an <img> element as the last child element of the <picture> element. The <img> element is 
+    used by browsers that do not support the <picture> element, or if none of the <source> tags match.    
+    -->
+    <hr>
+    <h1>PICTURE TAG</h1>
+    <picture>
+        <source media="(min-width:650px)" srcset="cricket.jpg">
+        <source media="(min-width:400px)"  srcset="Brush Tool.jpg">
+        <img src="cricket.jpg">
+    </picture> 
+    <hr>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+}
+h1{
+    color: greenyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    color: maroon;
+    font-style: oblique;
+    font-size:200% ;
+}
+h3{
+    /*The CSS border property defines a border around an HTML element.
+    The CSS padding property defines a padding (space) between the text and the border.
+    The CSS margin property defines a margin (space) outside the border.
+    */
+    border :2px solid rgb(50,49,89) ;
+    padding: 40px;
+    margin: 100px;
+}
+p{
+    font-style: italic;
+    background-color: mintcream;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LINKS</title>
+
+    <!--
+        To change nad modify colours and features of links mentioned above
+    -->
+    <style>
+        a:link{
+            color: crimson;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(206, 203, 19);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgba(0, 101, 216, 0.966);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active{
+            color: pink;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+<!--
+    The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self -  Default. Opens the document in the same window/tab as it was clicked
+_blank -  Opens the document in a new window or tab
+_parent -  Opens the document in the parent frame
+_top -   Opens the document in the full body of the window
+-->
+<hr>
+<h1>TYPES OF TARGETS </h1>
+<hr>
+<h1 id="S"> FOR _SELF</h1>
+<a href="https://www.cricbuzz.com/" target="_self">GO TO CRICKBUZZ by _self</a>
+<h1> FOR _BLANK</h1>
+<a href="https://www.cricbuzz.com/" target="_blank">GO TO CRICKBUZZ by _blank</a>
+<h1> FOR _PARENT</h1>
+<a href="https://www.cricbuzz.com/" target="_parent">GO TO CRICKBUZZ by _parent</a>
+<h1> FOR _TOP</h1>
+<a href="https://www.cricbuzz.com/" target="_top">GO TO CRICKBUZZ by _top</a>
+
+<!--
+    A local link (a link to a page within the same website) is specified with a relative URL
+     (without the "https://www" part):
+-->
+<hr>
+<h1>ABSOLUTE AND RELATIVE URL</h1>
+<hr>
+<a href="https://www.britannica.com/place/India">OPEN LINK </a> <br>    <!-- Absolute URL-->
+<a href="Brush Tool.jpg">OPEN IMAGE</a>    <!-- Relative URL-->
+<hr>
+
+<h1>IMAGE AS LINK</h1>
+<hr>
+<a href="cricket.jpg" target="_blank">
+    <img src="C:\Users\vision\Desktop\VS CODE\HTML\cricket.jpg" alt="Cricket image" >
+</a>
+<hr>
+
+<!--Use mailto: inside the href attribute to create a link that opens the user's email program 
+    (to let them send a new email):-->
+<h1>LINK TO AN EMAIL ADDRESS</h1>
+<a href="mailto:rchips2000@gmail.com">SEND AN EMAIL</a>
+<hr>
+
+<!--
+    Link Titles
+The title attribute specifies extra information about an element. 
+The information is most often shown as a tooltip text when the mouse moves over the element.
+-->
+<h1>LINK TITLE</h1>
+<a href="https://www.cricbuzz.com/" target="_blank" title="CRICKBUZZ FOR LIVE SCORES">GO TO CRICKBUZZ FOR LIVE SCORES</a>
+<hr>
+
+<!--
+    Bookmarks can be useful if a web page is very l
+    To create a bookmark - first create the bookmark, then add a link to it.
+    When the link is clicked, the page will scroll down or up to the location with the bookmark.
+-->
+<h1 id="A">bookmark created</h1>
+<a href="#A">JUMP TO BOOKMARK WITH ID A</a><br>
+<a href="#S">JUMP TO SELF target with id S</a>
+</body>
+</html>

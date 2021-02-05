@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    HTML metadata is data about the HTML document. Metadata is not displayed.
+    Metadata typically define the document title, character set, styles, scripts, and other meta information.
+    -->
+    <!--
+    The <base> element specifies the base URL and/or target for all relative URLs in a page.
+    The <base> tag must have either an href or a target attribute present, or both.
+    There can only be one single <base> element in a document!
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Refresh document every 30 seconds:--
+       Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="refresh" content="30">
+    <title>HTML ID</title>
+    <base href="https://www.w3schools.com/" target="_blank">
+    <style>
+        #ID{
+            background-color: seashell;
+            color:rgb(24, 38, 231);
+            border: 2px solid blue;
+            padding: 30px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+        }
+    </style>
+</head>
+<!--
+The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within 
+the HTML document.The id attribute is used to point to a specific style declaration in a style sheet. It is also
+used by JavaScript to access and manipulate the element with the specific id.The syntax for id is: write a hash 
+haracter (#), followed by an id name. Then, define the CSS properties within curly braces {}.In the following 
+example we have an <h1> element that points to the id name "myHeader". This <h1> element will be styled 
+according to the #myHeader style definition in the head section:
+-->
+<body>
+    <!--
+    Difference Between Class and ID
+    A class name can be used by multiple HTML elements,
+    while an id name must only be used by one HTML element within the page:
+    -->
+    <div id="ID">
+        <h1> This is ID tag</h1>
+        <p>Id tag is very useful </p>
+    </div>
+
+    <!--
+    HTML Bookmarks with ID and Links
+    HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+    Bookmarks can be useful if your page is very long.
+    To use a bookmark, you must first create it, and then add a link to it.
+    Then, when the link is clicked, the page will scroll to the location with the bookmark.
+     -->
+     <a href="#id">Click here to go to TAG ID</a><br>
+     <a href="https://www.w3schools.com/html/html_head.asp">W3 schools HTML</a>
+</body>
+</html>

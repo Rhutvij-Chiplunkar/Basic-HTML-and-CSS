@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Input Type Text
+<input type="text"> defines a single-line text input field:
+
+Input Type Submit
+<input type="submit"> defines a button for submitting form data to a form-handler.
+The form-handler is typically a server page with a script for processing input data.
+The form-handler is specified in the form's action attribute:
+
+Input Type Password
+<input type="password"> defines a password field:
+
+<input type="reset"> defines a reset button that will reset all form values to their default values:
+
+Input Type Radio
+<input type="radio"> defines a radio button.
+Radio buttons let a user select ONLY ONE of a limited number of choices:
+
+Input Type Checkbox
+<input type="checkbox"> defines a checkbox.
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+The <input type="color"> is used for input fields that should contain a color.
+Depending on browser support, a color picker can show up in the input field.
+
+The <input type="date"> is used for input fields that should contain a date.
+Depending on browser support, a date picker can show up in the input field.
+You can also use the min and max attributes to add restrictions to dates:
+
+Input Type Datetime-local
+The <input type="datetime-local"> specifies a date and time input field, with no time zone.
+Depending on browser support, a date picker can show up in the input field.
+
+Input Type Email
+The <input type="email"> is used for input fields that should contain an e-mail address.
+Depending on browser support, the e-mail address can be automatically validated when submitted.
+Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.
+
+Input Type File
+The <input type="file"> defines a file-select field and a "Browse" button for file uploads.
+
+Input Type Month
+The <input type="month"> allows the user to select a month and year.
+Depending on browser support, a date picker can show up in the input field.
+
+Input Type Number
+The <input type="number"> defines a numeric input field.
+You can also set restrictions on what numbers are accepted.
+The following example displays a numeric input field, where you can enter a value from 1 to 5:
+
+Input Type Range
+The <input type="range"> defines a control for entering a number whose exact value is not important 
+(like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers 
+are accepted with the min, max, and step attributes:
+
+Input Type Search
+The <input type="search"> is used for search fields (a search field behaves like a regular text field).
+
+Input Type Tel
+The <input type="tel"> is used for input fields that should contain a telephone number.
+
+The <input type="time"> allows the user to select a time (no time zone).
+Depending on browser support, a time picker can show up in the input field.
+
+**************************************
+INPUT ATTRIBUTES
+**************************************
+The value Attribute
+The input value attribute specifies an initial value for an input field:
+
+The readonly Attribute
+The input readonly attribute specifies that an input field is read-only.
+A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+The value of a read-only input field will be sent when submitting the form!
+
+The disabled Attribute
+The input disabled attribute specifies that an input field should be disabled.
+A disabled input field is unusable and un-clickable.
+The value of a disabled input field will not be sent when submitting the form!
+
+The size Attribute
+The input size attribute specifies the visible width, in characters, of an input field.
+The default value for size is 20.
+Note: The size attribute works with the following input types: text, search, tel, url, email, and password.
+
+The maxlength Attribute
+The input maxlength attribute specifies the maximum number of characters allowed in an input field.
+
+Note: When a maxlength is set, the input field will not accept more than the specified number of characters. 
+However, this attribute does not provide any feedback. So, if you want to alert the user, you must write 
+JavaScript code.
+
+The multiple Attribute
+The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.
+The multiple attribute works with the following input types: email, and file.
+
+The pattern Attribute
+The input pattern attribute specifies a regular expression that the input field's value is checked against,
+when the form is submitted.
+The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.
+
+The placeholder Attribute
+The input placeholder attribute specifies short a hint that describes the expected value of an input field 
+(a sample value or a short description of the expected format).
+The short hint is displayed in the input field before the user enters a value.
+The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+The required Attribute
+The input required attribute specifies that an input field must be filled out before submitting the form.
+The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+The step Attribute
+The input step attribute specifies the legal number intervals for an input field.
+Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+
+The autofocus Attribute
+The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+
+The list Attribute
+The input list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.
+
+The autocomplete Attribute
+The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.
+Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should 
+display options to fill in the field, based on earlier typed values.
+The autocomplete attribute works with <form> and the following <input> types: text, search, url, tel, email, 
+password, datepickers, range, and color.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="40">
+    <title>HTML INPUT TYPES</title>
+</head>
+<body>
+    <form action="cricket.jpg">
+
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" size="15" maxlength="10">   <!--The characters in a password field are masked (shown as asterisks or circles).-->
+        <br><br>
+
+        <label for="readonly">Read only</label>
+        <input type="text" id="readonly" name="readonly" value="HTML readonly attribute" readonly><br>
+        <label for="first_name">First Name:</label>
+        <input type="text" value="Enter your name" id="first_name" name="first_name" required><br>      
+        <label for="last_name">Last Name:</label>
+        <input type="text" value="Chiplunkar" id="last_name" name="last_name" disabled><br>
+        <input type="reset">
+        <br><br>
+
+        <label for="color">Choose your favourite colour:</label>
+        <input type="color" id="color" name="colour" value="#ffffff" autofocus>
+        <br><br>
+
+        <label for="DOB">Birth date</label>
+        <input type="date" id="DOB" name="DOB" min="2000-01-01" max="2003-12-31">
+        <br><br>
+
+        <label for="time">Current time</label>
+        <input type="datetime-local" id="time" name="time">
+        <br><br>
+
+        <label for="file" >Choose file</label>
+        <input type="file" id="file" name="file" multiple>  <!-- select multiple files-->
+        <br><br>
+
+        <label for="month">Enter month and year</label>
+        <input type="month" id="month" name="month">
+        <br><br>
+
+        <label for="number">Enter number</label>
+        <input type="number" id="number" name="number" min="10" max="20">
+        <br><br>
+
+        <label for="range">Range from 10 to 100</label>
+        <input type="range" id="range" name="range" min="10" max="100" step="10">
+        <!-- Slidebar appears that takes value accordingly-->
+        <br><br>
+
+        <label for="search">Search here</label>
+        <input type="search" id="search" name="search">
+        <br><br>
+
+        <label for="phone">Enter phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="9999999999" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label for="time">Whats the time now?</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <label for="url">Enter URL</label>
+        <input style="background-color: blueviolet; color: burlywood; border: 2px solid chartreuse;"  type="url" id="url" name="url">
+        <br><br>
+
+        <label for="week">Enter Week</label>
+        <input type="week" id="week" name="week">
+        <br><br>
+        <input type="submit" value="SUBMIT">        <!-- Final submit-->
+
+    </form>
+</body>
+</html>
